@@ -267,6 +267,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var routes = [
     {
         path: '',
+        loadChildren: './pages/component/accordion/accordion.module#AccordionModule'
+    },
+    {
+        path: 'starter',
         loadChildren: './pages/starter/starter.module#StarterModule'
     }, {
         path: 'dashboard',
