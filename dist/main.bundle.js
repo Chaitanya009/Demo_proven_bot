@@ -157,7 +157,7 @@ var AppComponent = (function () {
             .then(function (res) {
             console.log(res.status);
             _this.hideLoad = "true";
-            if (res.status == "unknown") {
+            if (res.status == "unknown" || "not_authorized") {
                 _this.hideMain = "true";
             }
             else if (res.status == "connected") {
